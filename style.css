@@ -1,0 +1,351 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: radial-gradient(#f5cebe, #f4eee8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-nav 
+{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 2em;
+}
+
+.push 
+{
+    
+    margin-left: auto;
+}
+
+li 
+{
+    padding: 10px;
+}
+
+a 
+{
+    color: #114e60;
+    text-decoration: none;
+}
+
+p 
+{
+    color: #114e60;
+}
+
+.nav-container
+{
+    max-width: 1250px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+}
+
+
+.slideshow-container 
+{
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+}
+  
+  /* Hide the images by default */
+.mySlides
+{
+    display: none;
+}
+  
+  /* Next & previous buttons */
+.prev, .next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover 
+{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text 
+{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+  /* Number text (1/3 etc) */
+.numbertext 
+{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* The dots/bullets/indicators */
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover 
+{
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+.btn
+{
+    display: inline-block;
+    background: #114e60;
+    color: #f4eee8;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categories
+{
+    margin: 70 0;
+}
+
+.small-container
+{
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+}
+
+.col-3
+{
+    flex-basis: 30%;
+    padding: 5px;
+    min-width: 200px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+
+.col-3:hover
+{
+    transform: translateY(-10px);
+}
+
+.col-3 img
+{
+    width: 100%;
+}
+
+.title
+{
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.footer
+{
+    background: #114e60;
+    color: #f4eee8;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+} 
+
+.footer p
+{
+    color: #f4eee8;
+}
+
+.footer h4
+{
+    color: #f4eee8;
+    margin-bottom: 10px;
+}
+
+.footer-col-1, .footer-col-2
+{
+    min-width: 250px;
+    margin-bottom: 10px;
+}
+
+.footer-col-1
+{
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.footer-col-2
+{
+    flex: 1;
+    text-align: center;
+}
+
+.footer hr
+{
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright
+{
+    text-align: right;
+    font-size: 0.75em;
+}
+
+.row-2
+{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select
+{
+    border: 1px solid #114e60;
+    padding: 5px;
+}
+
+.cart-page
+{
+    margin: 80px auto;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th
+{
+    text-align: left;
+    padding: 5px;
+    color: #f4eee8;
+    background: #114e60;
+    font-weight: normal;
+}
+
+td
+{
+    padding: 10px 5px;
+}
+
+td input
+{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a
+{
+    color: #114e60;
+    font-size: 12px;
+}
+
+td img
+{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table
+{
+    border-top: 3px solid #114e60;
+    width: 100%;
+    max-width: 350px;
+}
+
+td:last-child
+{
+    text-align: right;
+}
+
+th:last-child
+{
+    text-align: right;
+}
